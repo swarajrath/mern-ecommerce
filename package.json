@@ -11,7 +11,7 @@
     "build": "webpack --config webpack.config.client.production.js && webpack --mode=production --config webpack.config.server.js",
     "start": "NODE_ENV=production node ./dist/server.generated.js",
     "install-client": "npm install",
-    "heroku-postbuild": "NODE_ENV=production npm run install-client && npm run build"
+    "heroku-postbuild": "npm run install-client && npm run build"
   },
   "devDependencies": {
     "babel-core": "6.26.2",
